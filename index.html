@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo da aba de navegação -->
+    <title>G&TO - Uma nova casa da Moda ESG com estilo Natural Esportivo</title>
+    <!-- Colocando imagem na aba do navegador -->
+    <link rel="icon" href="./img/&.png">
+    <!-- Colocando descrição do site -->
+    <meta name="description"
+        content="Uma Casa de Moda comprometida com o movimento ESG, focada em roupas no Estilo Natural Esportivo para quem busca por roupas confortáveis e despojadas.">
+    <!-- Link com o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Importando ícones do font awesome -->
+    <script src="https://kit.fontawesome.com/f8a8f4b936.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script>
+        function mensagem() {
+            alert("Você será redirecionado para o seu servidor de email" +
+                "caso não esteja logado no seu email, efetue o login e tente novamente")
+        }
+
+        function click_menu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function tamanho_site() {
+            if (window.innerWidth > 768) {
+                itens.style.display = 'flex'
+                avatar.style.display = 'block'
+                profile.style.display = 'none'
+            } else {
+                itens.style.display = 'none'
+                avatar.style.display = 'none'
+                profile.style.display = 'block'
+            }
+        }
+    </script>
+</head>     
+
+<body onresize="tamanho_site()">
+    <header>
+        <nav class="alinhamento">
+
+            <a class="link_logo" href="#">
+                <img class="logo" src="./img/Ativo 1.png" alt="O logotipo da Jeito é composto apenas de letras no estilo sem serifa, modernas e condensadas, as cores utlizadas são branco e bege, o logo está em um fundo verde">
+            </a>
+
+            <ul class="menu" id="itens">
+                <li><a href="#">Home</a></li>
+                <li><a href="#quem_somos">Quem somos?</a></li>
+                <li><a href="#conheca_esg">Conheça o ESG</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li id="profile"><a href="./cadastro.html">Perfil</a></li>
+
+                <li><a href="./cadastro.html"><i id="avatar" class="fa-regular fa-user"></i></a></li>
+            </ul>
+
+            <!-- Menu de hamburger -->
+            <i id="burguer" class="fa-solid fa-bars" onclick="click_menu()"></i>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Página de inicio da Jeito</h1>
+
+        <!-- Quem somos? -->
+        <section class="quem_somos alinhamento" id="quem_somos">
+            <img class="primeira_foto" src="./img/pexels-toni-ferreira-1834391.jpg" alt="A imagem mostra uma mãe com a filha em um parque, elas estão usando roupas combinando, uma camiseta branca com folhas verdes e short jeans, a mãe esta sentada recebendo um beijo da filha">
+
+            <div class="sobre">
+                <p class="sobre_titulo">
+                    Olá, somos a G&TO!
+                </p>
+                <p class="sobre_texto">
+                    Uma casa de moda comprometida com o movimento ESG, focada em roupas no Estilo Natural Esportivo para
+                    quem busca por roupas confortáveis e despojadas.
+                </p>
+                <button class="btn_esg">
+                    <a href="#conheca_esg">
+                        Conheça a ESG
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Data de lançamento -->
+        <section class="data">
+            <p>Lançamento da <span>g&to</span></p>
+            <time datetime="2023-06-06">06/06/2023</time>
+        </section>
+
+        <!-- Imagens -->
+        <section class="imagens">
+            <div class="imgs alinhamento">
+
+                <img src="./img/pexels-luna-joie-16554911.jpg" alt="A imagem mostra uma mulher sentada em uma mesa, ela usa óculos escuros, uma camisa moderna com formas geométricas, calça jeans e bota branca, a modelo segura um buguê de flores amarelas">
+                <img src="./img/pexels-photo-5444977.jpeg" alt="A imagem mostra duas amigas que se divertem segurando bebidas geladas, está ensoralado, elas vestem camisetas brancas, shorts azuis e uma delas usa uma camiseta azul xadrez amarrada na cintura ">
+                <img src="./img/pexels-manuel-michael-13996056.jpg" alt="A imagem mostra uma mulher usando uma camiseta preta escrita forever or never em texto branco, traduzindo fica Para sempre ou nunca, por cima, e modelo utiliza uma camisa jeans escura. Ela tem uma expressão seria e poderosa ">
+
+            </div>
+        </section>
+
+        <!-- ESG -->
+        <section class="esg alinhamento" id="conheca_esg">
+            <div class="sobre_esg">
+                <p class="sobre_esg_titulo">O que é ESG?</p>
+                <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas que avaliam
+                    como as empresas cuidam do meio ambiente, das pessoas que trabalham com
+                    elas e de como são administradas. Por exemplo, uma empresa que usa materiais
+                    recicláveis e se preocupa em ter um ambiente de trabalho saudável para os
+                    funcionários tem uma boa nota em ESG. Isso é importante porque muitas pessoas
+                    estão preocupadas em apoiar empresas que cuidam do mundo e das pessoas, não só
+                    em ganhar dinheiro
+                </p>
+            </div>
+            <img src="./img/pexels-anna-shvets-4971132.jpg" alt="A imagem mostra um homem na rua utlizando uma blusa de moletom branco com as letras J, M e G em texto preto. Além disso o modelo utiliza uma calça preta e boné e sapato branco">
+        </section>
+
+        <!-- C(criar(create)) R(listar) U(atualizar) D(excluir) -->
+        <section class="formulario">
+            <p class="formulario_titulo">
+                Ficou algua dúvida?
+            </p>
+            <form method="post" action="mailto:geto@gmail.com" enctype="text/plain">
+                <!-- Nome -->
+                <div>
+
+                    <label for="name">Nome:</label>
+                    <input class="borda" type="text" id="name" name="name">
+
+                </div>
+
+                <!-- Email -->
+                <div>
+
+                    <label for="email">Email:</label>
+                    <input class="borda" type="email" id="email" name="email">
+
+                </div>
+
+                <!-- Mensagem -->
+                <div>
+
+                    <label for="menssage">Mensagem:</label>
+                    <textarea class="borda" name="message" id="message" cols="40" rows="6"></textarea>
+
+                </div>
+
+                <button class="btn_forms" type="submit" onclick="mensagem()">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Contato -->
+        <section class="contato alinhamento" id="contato">
+            <p class="contato_titulo">Contato</p>
+
+            <div class="conteudo_contato">
+
+                <div class="borda_mapa">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6988997567564!2d-46.570724299999995!3d-23.615129199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cec439b9ce3%3A0x92940269447ce633!2sR.%20Niter%C3%B3i%2C%20180%20-%20Centro%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009510-200!5e0!3m2!1sen!2sbr!4v1683145241591!5m2!1sen!2sbr"
+                        height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contato_info">
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(99) 99999-9999</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        contato@geto.com
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rua Niterói, 180 - SCS
+                        <p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@geto</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>@geto</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>@geto</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <!-- Copyright symbol alternative -> &copy; -->
+            <p>Todos os direitos reservados &#169;G&TO</p>
+        </section>
+    </footer>
+</body>
+
+</html>
